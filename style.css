@@ -19,6 +19,13 @@ body {
     padding: 5px 20px;
     border-radius: 30px;
     border: none;
+    transition: .2s;
     border-top: .9px solid #00ccff;
     border-bottom: .9px solid #00ccff;
+    & .clicked {
+        background-color: #00aaff;
+    }
+    &:hover {
+        background-color: #00aaff;
+    }
 }
