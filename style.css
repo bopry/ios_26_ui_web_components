@@ -9,7 +9,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: #eee;
 }
 
 .ios-btn, .ios-blue-btn {
@@ -19,6 +19,7 @@ body {
     border: none;
     margin: 10px;
     transition: .2s;
+    box-shadow: 0 5px 15px #00000018;
     &:hover {
         transform: scale(1.07);
     }
@@ -34,12 +35,30 @@ body {
     }
 }
 
+/* Dark Mode */
+/*
+:root {
+    --ios-btn-bg-color: #7f7f7f22;
+    --ios-btn-active-bg-color: #7f7f7f33;
+    --border-color: #222;
+    --ios-btn-color: #fff;
+}
+*/
+
+/* Light Mode bg #eee*/
+:root {
+    --ios-btn-bg-color: #7771;
+    --ios-btn-active-bg-color: #fff4;
+    --border-color: #fff;
+    --ios-btn-color: #000;
+}
+
 .ios-btn {
-    background-color: #7f7f7f22;
-    color: #fff;
-    border-top: .9px solid #222;
-    border-bottom: .9px solid #222;
+    background-color: var(--ios-btn-bg-color);
+    color: var(--ios-btn-color);
+    border-top: .9px solid var(--border-color);
+    border-bottom: .9px solid var(--border-color);
     &:hover {
-        background-color: #7f7f7f33;
+        background-color: var(--ios-btn-active-bg-color);
     }
 }
