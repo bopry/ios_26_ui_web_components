@@ -17,6 +17,7 @@ body {
     padding: 5px 20px;
     border-radius: 30px;
     border: none;
+    margin: 10px;
     transition: .2s;
     &:hover {
         transform: scale(1.07);
@@ -36,8 +37,8 @@ body {
 .ios-btn {
     background-color: #7f7f7f22;
     color: #fff;
-    border-top: .9px solid #FFF2;
-    border-bottom: .9px solid #FFF2;
+    border-top: .9px solid #222;
+    border-bottom: .9px solid #222;
     &:hover {
         background-color: #7f7f7f33;
     }
