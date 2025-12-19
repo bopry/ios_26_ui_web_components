@@ -18,6 +18,6 @@ body {
     padding: 5px 20px;
     border-radius: 30px;
     border: none;
-    border-top: 1px solid #00ccff;
-    border-bottom: 1px solid #00ccff;
+    border-top: .9px solid #00ccff;
+    border-bottom: .9px solid #00ccff;
 }
