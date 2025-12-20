@@ -9,7 +9,8 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #eee;
+    background-color: #ddd;
+    background-image: url('https://avatars.mds.yandex.net/i?id=43f1a029d98aef8cb0091dba04947086_l-5292126-images-thumbs&n=27&h=480&w=480');
 }
 
 .ios-btn, .ios-blue-btn {
@@ -22,6 +23,7 @@ body {
     box-shadow: 0 5px 15px #00000018;
     &:hover {
         transform: scale(1.07);
+        text-shadow: 0 0 10px #fff;
     }
 }
 
@@ -46,14 +48,18 @@ body {
 */
 
 /* Light Mode bg #eee*/
+
 :root {
-    --ios-btn-bg-color: #7771;
-    --ios-btn-active-bg-color: #fff4;
-    --border-color: #fff;
+    --ios-btn-bg-color: #fff2;
+    --ios-btn-active-bg-color: #fff7;
+    --border-color: #fff7;
     --ios-btn-color: #000;
 }
 
+
 .ios-btn {
+    backdrop-filter: blur(2px) saturate(150%);
+    box-shadow: 0 5px 15px #00000018, inset 0 0 10px #fff;
     background-color: var(--ios-btn-bg-color);
     color: var(--ios-btn-color);
     border-top: .9px solid var(--border-color);
